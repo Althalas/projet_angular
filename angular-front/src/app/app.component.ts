@@ -8,10 +8,10 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, HomeComponent, CommonModule],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, CommonModule, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-front';
+  title = 'electricity-Business';
 }

@@ -1,1 +1,24 @@
-<p>{{intro}}</p>
+<a routerLink="/home">Accueil</a>
+<div class="container">
+    <p>{{intro}}</p>
+    <p>{{presentation}}</p>
+</div>
+<table>
+    <tr>
+      <th *ngFor="let column of columns">{{column.name}}</th>
+      <th>Détail</th>
+    </tr>
+    @for (row of data; track row.id) {
+      <app-anouncement-item [row]="row" [columns]="columns"></app-anouncement-item>
+    }
+</table>
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Puissance</th>
+    <th>Adresse</th>
+  </tr>
+  <app-anouncement-item [row]="data[0]" [columns]="columns"></app-anouncement-item>
+</table>

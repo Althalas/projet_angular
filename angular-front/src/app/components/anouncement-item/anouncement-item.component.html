@@ -1,0 +1,9 @@
+<tr>
+  <ng-container *ngFor="let column of columns">
+    <td *ngIf="column.key === 'latitude' || column.key === 'longitude'">{{row?.latitude | number:'1.2-2'}}</td>
+    <td *ngIf="column.key !== 'latitude' && column.key !== 'longitude'">{{row?.nom}}</td>
+  </ng-container>
+  <td>
+    <a [routerLink]="['/detail', row?.id]">Voir détail</a>
+  </td>
+</tr>

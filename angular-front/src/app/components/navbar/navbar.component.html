@@ -1,4 +1,9 @@
 <div class="navbar">
-  <img src="images/favicon.ico" alt="logo" class="logo">
-  <h1>Angular Front</h1>
+  <img [src]="logo" alt="logo" class="logo">
+  <h1>{{title}}</h1>
+  <ul>
+    <li *ngFor="let item of menu">
+      <a [routerLink]="item.path">{{item.label}}</a>
+    </li>
+  </ul>
 </div>

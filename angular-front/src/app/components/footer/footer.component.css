@@ -1,8 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 footer {
-  background-color: #000;
+  background-color: #111;
   color: #fff;
-  padding: 10px;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+  opacity: 0.85;
 }
